@@ -1,0 +1,29 @@
+.navbar{
+    background-color: #007bff;
+    color: white;
+   
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ }
+#cartImage{
+    color:white;
+    text-decoration: none;
+    margin-top: -9px;
+    margin-left: -10px;
+}
+#search{
+    border-radius: 0.10rem 0.40rem 0.40rem 0.10rem;
+    background-color: white;
+   
+}
+#searchicon{
+    color:#007bff;
+}
+#submit{
+    background-color: white;
+    
+}
