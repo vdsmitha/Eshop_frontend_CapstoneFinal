@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="col-md-2"></div>
+      <div class="col-md-8" id="items">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <button class="btn btn-primary" id="home" aria-current="page" [routerLink]="['/products']">Home</button>&nbsp;
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-link" id="auto" [routerLink]="['/products/category/automotive']">Automotive</button>&nbsp;
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-link" id="baby" [routerLink]="['/products/category/babycare']">Baby Care</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-link" id= "bags" [routerLink]="['/products/category/bags']">Bags Wallets & Belts</button>
+          </li>
+          
+        </ul>
+    </div>
+    <div class="col-md-2"></div>
+      </div>
+    </div>
+  </nav>
+<div class="container">
+  <span>Sort By</span>&nbsp;
+  <select name="cars" id="cars">
+    <option value="default">Default</option>
+    <option value="highest">Price Highest</option>
+    <option value="lowest">Price Lowest</option>
+    <option value="newest">Newest</option>
+  </select>
+
+  
+</div>

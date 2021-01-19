@@ -1,25 +1,22 @@
 <html>
   <head>
-    <title>Header</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div>
   <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-       <div><i class="fa fa-shopping-cart" aria-hidden="true">
-         <button id="cartImage" class="btn btn-link" [routerLink]="['']">
-           <a href="">upGrad Eshop</a></button></i></div>
+       <div> <i class="fa fa-shopping-cart" aria-hidden="true"><button id="shop" class="btn btn-link" [routerLink]="['']" >upGrad Eshop</button></i></div>
        <div>
         <form class="navbar-form" role="search">
             <div class="input-group add-on">
-              <input class="form-control" placeholder="Type to search Products..." name="srch-term" type="text">
+              <input class="form-control" placeholder="Type to search Products" name="srch-term" type="text">
               <div class="input-group-btn">
                 <button class="btn btn-default" id="search" type="submit"><i class="fa fa-search" id="searchicon"></i></button>
               </div>
             </div>
           </form>
-          
        </div> 
        <div><app-signin-modal></app-signin-modal></div>
       </div>
