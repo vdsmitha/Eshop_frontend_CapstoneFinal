@@ -1,0 +1,164 @@
+<div class="container">
+    <h2 style="text-align: center;">Add New Product</h2>
+    <div>
+        <form [formGroup]="productForm" (ngSubmit)="addProduct()">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" placeholder="Name" id="name" formControlName="productName" [ngClass]="{
+                        'is-invalid': 
+                        (productForm.get('productName').touched ||
+                          productForm.get('productName').dirty) &&
+                        !productForm.get('productName').valid
+                    }"/>
+                    <span class="invalid-feedback">
+                        <span *ngIf="productForm.get('productName').errors?.required">
+                            Name is required.
+                        </span>
+                        <span *ngIf="productForm.get('productName').errors?.minlength">
+                             Name isn't long enough, minimum 3 characters needed.
+                        </span>
+
+                       
+                    </span>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <label for="category">Product Category</label>
+                    <input type="text" class="form-control" placeholder="Product Category" id="category" formControlName="productCategory" [ngClass]="{
+                        'is-invalid': 
+                        (productForm.get('productCategory').touched ||
+                          productForm.get('productCategory').dirty) &&
+                        !productForm.get('productCategory').valid
+                    }"/>
+                    <span class="invalid-feedback">
+                        <span *ngIf="productForm.get('productCategory').errors?.required">
+                            Product Catgory is required.
+                        </span>
+                       
+                    </span>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <label for="manufacturer">Manufacturer</label>
+                    <input type="text" class="form-control" id="manufacturer" placeholder="Manufacturer" formControlName="productManufacturer" [ngClass]="{
+                        'is-invalid': 
+                        (productForm.get('productManufacturer').touched ||
+                          productForm.get('productManufacturer').dirty) &&
+                        !productForm.get('productManufacturer').valid
+                    }"/>
+                    <span class="invalid-feedback">
+                        <span *ngIf="productForm.get('productManufacturer').errors?.required">
+                            Product Manufacturer is required.
+                        </span>
+                       
+                    </span>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <label for="items">Available Items</label>
+                    <input type="text" class="form-control" id="items" autocomplete="off" placeholder="Available items" formControlName="availableItems" [ngClass]="{
+                        'is-invalid': 
+                        (productForm.get('availableItems').touched ||
+                          productForm.get('availableItems').dirty) &&
+                        !productForm.get('availableItems').valid
+                    }"/>
+                    <span class="invalid-feedback">
+                        <span *ngIf="productForm.get('availableItems').errors?.required">
+                            Available Items are required.
+                        </span>
+                        <span *ngIf="productForm.get('availableItems').errors?.min">
+                            Available Items should be greater than zero.
+                        </span>
+                        
+                       
+                    </span>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <label for="price">Price</label>
+                    <input type="text" class="form-control" id="price" placeholder="price" formControlName="productPrice" [ngClass]="{
+                        'is-invalid': 
+                        (productForm.get('productPrice').touched ||
+                          productForm.get('productPrice').dirty) &&
+                        !productForm.get('productPrice').valid
+                    }"/>
+                    <span class="invalid-feedback">
+                        <span *ngIf="productForm.get('productPrice').errors?.required">
+                            Product Price is required.
+                        </span>
+                       
+                    </span>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3"></div>
+
+                <div class="col-md-6">
+                    <label for="url">Image Url</label>
+                    <input type="text" class="form-control" id="url" placeholder="Image Url" formControlName="imageUrl" [ngClass]="{
+                        'is-invalid': 
+                        (productForm.get('imageUrl').touched ||
+                          productForm.get('imageUrl').dirty) &&
+                        !productForm.get('imageUrl').valid
+                    }"/>
+                    <span class="invalid-feedback">
+                        <span *ngIf="productForm.get('imageUrl').errors?.required">
+                            Image Url is required.
+                        </span>
+                       
+                    </span>
+                </div>
+                <div class="col-md-3"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <label for="description">Product Description</label>
+                    <textarea class="form-control" placeholder="Product Description" id="description" formControlName="productDescription" [ngClass]="{
+                        'is-invalid': 
+                        (productForm.get('productDescription').touched ||
+                          productForm.get('productDescription').dirty) &&
+                        !productForm.get('productDescription').valid
+                    }"></textarea>
+                    <span class="invalid-feedback">
+                        <span *ngIf="productForm.get('productDescription').errors?.required">
+                            Product description is required.
+                        </span>
+                       
+                    </span>
+                </div>
+                <div class="col-md-3"></div>
+        </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                    <input type="submit" class="btn btn-primary" style="width: 100%;" value="Save" [disabled]="!productForm.valid">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

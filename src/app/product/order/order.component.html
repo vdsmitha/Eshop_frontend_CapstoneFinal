@@ -1,76 +1,77 @@
 <div class="container">
     
-  <div id="stepper1" class="bs-stepper">
-    <div class="bs-stepper-header">
-      <div class="step" data-target="#test-l-1">
-        <button class="step-trigger">
-          <span class="bs-stepper-circle">1</span>
-          <span class="bs-stepper-label">Items</span>
-        </button>
-      </div>
-      <div class="line"></div>
-      <div class="step" data-target="#test-l-2">
-        <button class="step-trigger">
-          <span class="bs-stepper-circle">2</span>
-          <span class="bs-stepper-label">Choose Address</span>
-        </button>
-      </div>
-      <div class="line"></div>
-      <div class="step" data-target="#test-l-3">
-        <button class="step-trigger">
-          <span class="bs-stepper-circle">3</span>
-          <span class="bs-stepper-label">Review Order</span>
-        </button>
-      </div>
-      <div class="line"></div>
-      <div class="step" data-target="#test-l-4">
-        <button class="step-trigger">
-          <span class="bs-stepper-circle">4</span>
-          <span class="bs-stepper-label">Confirm Order</span>
-        </button>
-      </div>
+    <div id="stepper1" class="bs-stepper">
+      <div class="bs-stepper-header">
+        <div class="step" data-target="#test-l-1">
+          <button class="step-trigger">
+            <span class="bs-stepper-circle">1</span>
+            <span class="bs-stepper-label">Items</span>
+          </button>
+        </div>
+        <div class="line"></div>
+        <div class="step" data-target="#test-l-2">
+          <button class="step-trigger">
+            <span class="bs-stepper-circle">2</span>
+            <span class="bs-stepper-label">Choose Address</span>
+          </button>
+        </div>
+        <div class="line"></div>
+        <div class="step" data-target="#test-l-3">
+          <button class="step-trigger">
+            <span class="bs-stepper-circle">3</span>
+            <span class="bs-stepper-label">Review Order</span>
+          </button>
+        </div>
+        <div class="line"></div>
+        <div class="step" data-target="#test-l-4">
+          <button class="step-trigger">
+            <span class="bs-stepper-circle">4</span>
+            <span class="bs-stepper-label">Confirm Order</span>
+          </button>
+        </div>
 
-    </div>
-    <div class="bs-stepper-content">
-     
-        <div id="test-l-1" class="content">
-          
-          <div class="col-md-4">
-          <button (click)="next()" class="btn btn-primary">Continue</button></div>
-        </div>
-        <div id="test-l-2" class="content">
-          
-              <div class="col-md-3"></div>
-              <div class="col-md-6">
-                  <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="pickup" placeholder="Name" required/>
-            <label for="address">Address (street, apartment, suite, unit street etc)</label>
-            <input type="text" class="form-control" id="address" placeholder="Address (street, apartment, suite, unit street etc)" required/>
-            <label for="landmark">Landmark</label>
-            <input type="text" class="form-control" id="landmark" placeholder="Landmark" required/>
-            <label for="city">City</label>
-            <input type="text" class="form-control" id="city" placeholder="City" required/>
-            <label for="state">State</label>
-            <input type="text" class="form-control" id="state" placeholder="State" required/>
-            <label for="zip">Zip/Postal Code</label>
-            <input type="text" class="form-control" id="zip" placeholder="Zip/Postal Code" required/>
-            <label for="phone">Phone Number</label>
-            <input type="phone" class="form-control" id="phone" placeholder="Phone Number" required/>
+      </div>
+      <div class="bs-stepper-content">
+       
+          <div id="test-l-1" class="content">
+            
+            <div class="col-md-4">
+            <button (click)="next()" class="btn btn-primary">Continue</button></div>
           </div>
+          <div id="test-l-2" class="content">
+            
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="pickup" placeholder="Name" required/>
+              <label for="address">Address (street, apartment, suite, unit street etc)</label>
+              <input type="text" class="form-control" id="address" placeholder="Address (street, apartment, suite, unit street etc)" required/>
+              <label for="landmark">Landmark</label>
+              <input type="text" class="form-control" id="landmark" placeholder="Landmark" required/>
+              <label for="city">City</label>
+              <input type="text" class="form-control" id="city" placeholder="City" required/>
+              <label for="state">State</label>
+              <input type="text" class="form-control" id="state" placeholder="State" required/>
+              <label for="zip">Zip/Postal Code</label>
+              <input type="text" class="form-control" id="zip" placeholder="Zip/Postal Code" required/>
+              <label for="phone">Phone Number</label>
+              <input type="phone" class="form-control" id="phone" placeholder="Phone Number" required/>
+            </div>
+            </div>
+            <div class="col-md-3"></div>
+            
+            <button (click)="next()" class="btn btn-primary">Continue</button>
           </div>
-          <div class="col-md-3"></div>
-          
-          <button (click)="next()" class="btn btn-primary">Continue</button>
-        </div>
-        <div id="test-l-3" class="content text-center">
-          <button (click)="next()" class="btn btn-primary">Confirm Order</button>
-          
-        </div>
-        <div id="test-l-4" class="content text-center">
-          
-        </div>
-      
+          <div id="test-l-3" class="content text-center">
+            <button (click)="next()" class="btn btn-primary">Confirm Order</button>
+            
+          </div>
+          <div id="test-l-4" class="content text-center">
+            
+          </div>
+        
+      </div>
     </div>
   </div>
-</div>
+  

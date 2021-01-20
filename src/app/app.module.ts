@@ -20,6 +20,7 @@ import { AdminDashboardComponent } from './user/admin-dashboard/admin-dashboard.
 import { AutomotiveComponent } from './product/automotive/automotive.component';
 import { BabycareComponent } from './product/babycare/babycare.component';
 import { BagsComponent } from './product/bags/bags.component';
+import { AddProductComponent } from './user/add-product/add-product.component';
 
 
 
@@ -37,6 +38,7 @@ import { BagsComponent } from './product/bags/bags.component';
     AutomotiveComponent,
     BabycareComponent,
     BagsComponent,
+    AddProductComponent,
    
   ],
   imports: [
